@@ -19,9 +19,9 @@ down to ES5 to support all browser environments.
 Current results
 ===
 
-See below the results achieved by running on Node v6.3.0.
+See below the results achieved by running each scenario 10x on Node v6.3.0.
 
-> Machine specs: Macbook Air / 1.3 GHz Intel Core i5 / 8GB 1600 MHz DDR3
+Machine specs: Macbook Air / 1.3 GHz Intel Core i5 / 8GB 1600 MHz DDR3
 
 **Label**
 
@@ -34,22 +34,22 @@ See below the results achieved by running on Node v6.3.0.
 Execution time
 ---
 
-| scenario | vanilla | vanillaPromote | ts | babel | es6 |
+| scenario (10 times) | vanilla | vanillaPromote | ts | babel | es6 |
 | --- | --- | --- | --- | --- | --- |
-| eval declarations | 0.65ms | 0.75ms | 0.44ms | 0.73ms | 0.27ms |
-| constructor without inheritance | 0.42ms | 0.46ms | 0.35ms | 0.36ms | 1.34ms |
-| constructor with 2 levels of inheritance | 1.17ms | 1.12ms | 0.85ms | 3.43ms | 1.78ms |
-| method call with two levels of inheritance | 0.65ms | 0.58ms | 0.69ms | 1.62ms | 2.67ms |
+| eval declarations | 1.46ms | 1.70ms | 3.15ms | 6.75ms | 0.57ms |
+| constructor without inheritance | 0.14ms | 0.22ms | 0.19ms | 0.17ms | 0.11ms |
+| constructor with 2 levels of inheritance | 0.20ms | 0.20ms | 0.25ms | 0.51ms | 0.17ms |
+| method call with two levels of inheritance | 0.09ms | 0.17ms | 0.19ms | 0.64ms | 0.25ms |
 
-Memory usage
+Memory usage ( `process.memoryUsage().heapUsed` )
 ---
 
-| scenario | vanilla | vanillaPromote | ts | babel | es6 |
+| scenario (10 times) | vanilla | vanillaPromote | ts | babel | es6 |
 | --- | --- | --- | --- | --- | --- |
-| eval declarations | 28.63k | 22.18k | 14.86k | 27.13k | 10.27k |
-| constructor without inheritance | 36.23k | 33.88k | 34.52k | 40.86k | 58.16k |
-| constructor with 2 levels of inheritance | 83.39k | 72.97k | 67.45k | 204.32k | 67.49k |
-| method call with two levels of inheritance | 4.82k | 18.53k | 15.02k | 126.43k | 9.12k |
+| eval declarations | 80.39k | 97.70k | 134.34k | 221.84k | 62.42k |
+| constructor without inheritance | 3.47k | 2.32k | 2.48k | 3.19k | 2.34k |
+| constructor with 2 levels of inheritance | 5.86k | 4.53k | 4.33k | 11.60k | 5.27k |
+| method call with two levels of inheritance | 1.63k | 3.32k | 3.36k | 7.29k | 2.97k |
 
 How to run
 ---

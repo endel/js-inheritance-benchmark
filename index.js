@@ -9,7 +9,7 @@ const targets = {
   es6: { module: require('./babel/index-babel.js'), source: fs.readFileSync('./babel/index-babel.js').toString() },
 };
 
-const numLoops = 1000;
+const numLoops = 10;
 
 let suites = [];
 let executionTable = [];
@@ -63,7 +63,7 @@ function buildTable (table) {
   let scenarios = suites.slice(0);
 
   // Header
-  currentRow.push('scenario');
+  currentRow.push('scenario ('+numLoops+' times)');
   for (let target in targets) {
     currentRow.push(target);
   }
@@ -95,7 +95,7 @@ suite("eval declarations");
 for (let target in targets) {
   bench(target, function() {
     eval(targets[target].source);
-  }, 1);
+  }, numLoops);
 }
 updateComparisionTable();
 
@@ -146,7 +146,7 @@ console.log( buildTable(executionTable) );
 
 console.log('');
 
-console.log('Memory usage');
+console.log('Memory usage ( `process.memoryUsage().heapUsed` )');
 console.log('---');
 console.log('');
 console.log( buildTable(memoryTable) );
