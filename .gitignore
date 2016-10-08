@@ -1,0 +1,4 @@
+node_modules
+babel/index.js
+ts/index.js
+ts/index.d.js

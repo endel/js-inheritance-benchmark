@@ -1,0 +1,20 @@
+{
+  "name": "js-inheritance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --expose-gc index.js",
+    "install": "tsc -d --project ts && babel babel/index-babel.js --out-file babel/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "present": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "typescript": "^2.0.3"
+  }
+}
