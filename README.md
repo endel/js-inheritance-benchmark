@@ -39,10 +39,10 @@ Execution time
 
 | scenario (10 times) | vanilla | vanillaPromote | ts | babel | buble | es6 |
 | --- | --- | --- | --- | --- | --- | --- |
-| eval declarations | 1.21ms | 1.75ms | 2.85ms | 8.52ms | 0.82ms | 0.53ms |
-| constructor without inheritance | 0.12ms | 0.08ms | 0.09ms | 0.19ms | 0.10ms | 0.09ms |
-| constructor with 2 levels of inheritance | 0.22ms | 0.15ms | 0.17ms | 0.34ms | 0.27ms | 0.21ms |
-| method call with two levels of inheritance | 0.10ms | 0.13ms | 0.15ms | 0.37ms | 0.16ms | 0.27ms |
+| eval declarations | 1.66ms | 1.77ms | 2.91ms | 6.55ms | 1.52ms | 0.59ms |
+| constructor without inheritance | 0.26ms | 0.12ms | 0.10ms | 0.25ms | 0.10ms | 0.09ms |
+| constructor with 2 levels of inheritance | 0.31ms | 0.17ms | 0.16ms | 0.35ms | 0.16ms | 0.15ms |
+| method call with two levels of inheritance | 0.11ms | 0.13ms | 0.17ms | 0.41ms | 0.22ms | 0.16ms |
 
 Memory usage ( `process.memoryUsage().heapUsed` )
 ---
@@ -50,8 +50,8 @@ Memory usage ( `process.memoryUsage().heapUsed` )
 | scenario (10 times) | vanilla | vanillaPromote | ts | babel | buble | es6 |
 | --- | --- | --- | --- | --- | --- | --- |
 | eval declarations | 80.38k | 97.67k | 134.30k | 222.82k | 65.09k | 62.42k |
-| constructor without inheritance | 3.47k | 2.32k | 2.48k | 3.09k | 2.38k | 2.34k |
-| constructor with 2 levels of inheritance | 5.77k | 4.53k | 4.33k | 8.61k | 4.80k | 5.27k |
+| constructor without inheritance | 3.47k | 2.32k | 2.32k | 3.09k | 2.38k | 2.34k |
+| constructor with 2 levels of inheritance | 5.77k | 4.53k | 4.27k | 8.61k | 4.80k | 5.27k |
 | method call with two levels of inheritance | 2.13k | 3.32k | 3.36k | 10.02k | 3.53k | 2.97k |
 
 How to run

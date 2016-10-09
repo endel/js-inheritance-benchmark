@@ -1,12 +1,12 @@
 export class Level0 {
-    protected num: number = 0;
+    protected num: number;
 
     constructor () {
         this.num = 0;
     }
 
     method () {
-      this.num += 1;
+        this.num += 1;
     }
 }
 
