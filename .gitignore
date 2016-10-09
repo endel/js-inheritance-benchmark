@@ -1,4 +1,5 @@
 node_modules
 babel/index.js
+babel/index-buble.js
 ts/index.js
 ts/index.d.js
