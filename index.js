@@ -6,6 +6,7 @@ const targets = {
   vanillaPromote: { module: require('./vanilla-promote'), source: fs.readFileSync('./vanilla-promote/index.js').toString() },
   ts: { module: require('./ts'), source: fs.readFileSync('./ts/index.js').toString() },
   babel: { module: require('./babel'), source: fs.readFileSync('./babel/index.js').toString() },
+  buble: { module: require('./babel/index-buble.js'), source: fs.readFileSync('./babel/index-buble.js').toString() },
   es6: { module: require('./babel/index-babel.js'), source: fs.readFileSync('./babel/index-babel.js').toString() },
 };
 
