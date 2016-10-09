@@ -1,5 +1,5 @@
 node_modules
-babel/index.js
-babel/index-buble.js
+es6/index-babel.js
+es6/index-buble.js
 ts/index.js
 ts/index.d.js

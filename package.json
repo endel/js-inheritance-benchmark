@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node --expose-gc index.js",
-    "install": "tsc -d --project ts && babel babel/index-babel.js --out-file babel/index.js && buble babel/index-babel.js -o babel/index-buble.js",
+    "install": "tsc -d --project ts && babel es6/index.js --out-file es6/index-babel.js && buble es6/index.js -o es6/index-buble.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
