@@ -39,10 +39,10 @@ Execution time
 
 | scenario (10 times) | vanilla | vanillaPromote | ts | babel | buble | es6 |
 | --- | --- | --- | --- | --- | --- | --- |
-| eval declarations | 2.30ms | 1.93ms | 3.95ms | 8.38ms | 1.00ms | 0.52ms |
-| constructor without inheritance | 0.21ms | 0.12ms | 0.12ms | 0.15ms | 0.10ms | 0.10ms |
-| constructor with 2 levels of inheritance | 0.23ms | 0.29ms | 0.20ms | 0.66ms | 0.25ms | 0.24ms |
-| method call with two levels of inheritance | 0.28ms | 0.21ms | 0.21ms | 0.40ms | 0.24ms | 0.22ms |
+| eval declarations | 1.18ms | 2.85ms | 3.57ms | 6.29ms | 0.81ms | 0.46ms |
+| constructor without inheritance | 0.14ms | 0.09ms | 0.09ms | 0.14ms | 0.09ms | 0.08ms |
+| constructor with 2 levels of inheritance | 0.19ms | 0.26ms | 0.18ms | 0.36ms | 0.20ms | 0.18ms |
+| method call with two levels of inheritance | 0.07ms | 0.14ms | 0.17ms | 0.32ms | 0.17ms | 0.16ms |
 
 Memory usage ( `process.memoryUsage().heapUsed` )
 ---

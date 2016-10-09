@@ -14,7 +14,6 @@ function Level1 () {
 }
 Level1.prototype.method = function() {
   Level0.prototype.method.call(this);
-  this.Level0_method();
   this.num += 1;
 }
 
