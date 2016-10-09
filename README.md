@@ -27,7 +27,7 @@ Machine specs: Macbook Air / 1.3 GHz Intel Core i5 / 8GB 1600 MHz DDR3
 
 - [vanilla](vanilla/index.js): Plain ES5 standards JavaScript.
 - [vanillaPromote](vanilla-promote/index.js): Derivation of "vanilla", used by libraries such as [EaselJS](https://github.com/CreateJS/EaselJS)
-- [ts](ts/index.ts): TypeScript code transpiled down to ES5
+- [ts](ts/index.ts): TypeScript code transpiled down to ES5 using [TypeScript](https://github.com/Microsoft/TypeScript)
 - [babel](babel/index.js): JavaScript code (ES6) transpiled down to ES5 using
   [babel](https://github.com/babel/babel)
 - [buble](babel/index.js): JavaScript code (ES6) transpiled down to ES5 using
